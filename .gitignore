@@ -1,14 +1,19 @@
-# ===== 数据与产物（隐私 + 超 GitHub 100MB 限制，不入库）=====
+# ===== 原始数据（隐私 / 体积，不入库）=====
 data/
-output/
 
-# ===== 验证/测试脚本（本机旧结果对比用，含绝对路径）=====
+# ===== 运行中间产物（可重算，体积大）=====
+# 音频原始/包络中间 mat、EEG 逐步预处理 mat 不入库
+output/Audio/
+output/EEG/Each/*/EEG_preprocess/
+
+# 案例结果保留入库：
+#   output/figures/*.png
+#   output/EEG/Each/*/TRF_results/mTRF_model.mat
+
+# ===== 验证/测试脚本（本机旧结果对比用）=====
 smoke_test.m
 compare_outputs.m
 smoke_test.log
-
-# ===== 第三方大型工具箱（GPL，public 仓库建议排除，见 README 说明）=====
-external/fieldtrip-20181205/
 
 # ===== 系统/编辑器杂项 =====
 .DS_Store

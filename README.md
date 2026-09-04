@@ -15,13 +15,8 @@
 | runica（ICA） | **已内置** `src/utils/runica.m`（来自 EEGLAB，自包含无依赖） |
 | 操作系统 | Windows / Linux / macOS 均可（代码全部用 fullfile 拼路径） |
 
-> **从 GitHub 克隆的用户注意**：仓库默认不含 FieldTrip（GPL 且体积大）。
-> 请自行下载后解压到 `external/fieldtrip-20181205/`：
-> - 官方版本存档：`https://download.fieldtriptoolbox.org/versions/fieldtrip-20181205.zip`
-> - 或 FieldTrip GitHub 仓库对应日期版本
-> 放好后 `setup()` 会自动识别；目录名必须正好是 `fieldtrip-20181205`。
-
-> 无需联网安装任何工具箱；FieldTrip 与 mTRF 均随项目携带，其许可证见各自目录。
+> 克隆后无需再装 FieldTrip / mTRF；二者已随仓库携带（许可证见各自目录）。
+> 仓库附带 **案例结果**（`output/figures/` 与各被试 `TRF_results/`），便于对照；原始 `data/` 与 EEG 预处理中间文件不入库，需自备数据才能端到端重跑。
 
 ---
 
@@ -125,13 +120,15 @@ mTRF_pipeline/
 │       └─ trialfun_BDF_zxm.m    Neuracle BDF 分段函数（替代已佚失的 ft_trialfun_BDF_zxm，
 │                                行为与通用 BDF trialfun 一致：按触发值截取 -prestim~+poststim）
 ├─ external/
-│   ├─ fieldtrip-20181205/       FieldTrip 完整副本（157MB，含模板电极文件）
+│   ├─ fieldtrip-20181205/       FieldTrip 完整副本（约 158MB，含模板电极文件；已入库）
 │   └─ mtrf/                     mTRF 核心函数 21 个 + LICENSE/README/CITATION
 ├─ resources/
 │   ├─ eeg_neighbours_29.mat     29 通道邻域定义
 │   └─ label31.mat               31 通道名
-├─ data/                         输入数据（按第 2 节摆放）
-└─ output/                       全部产物（运行自动生成）
+├─ data/                         输入数据（本地自备，不入库）
+└─ output/
+    ├─ figures/                  案例图（已入库）：TRF / 地形图 PNG
+    └─ EEG/Each/sub*/TRF_results/  案例模型（已入库）；EEG_preprocess/ 中间文件不入库
 ```
 
 ---
