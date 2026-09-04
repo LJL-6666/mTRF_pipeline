@@ -1,0 +1,18 @@
+# ===== 数据与产物（隐私 + 超 GitHub 100MB 限制，不入库）=====
+data/
+output/
+
+# ===== 验证/测试脚本（本机旧结果对比用，含绝对路径）=====
+smoke_test.m
+compare_outputs.m
+smoke_test.log
+
+# ===== 第三方大型工具箱（GPL，public 仓库建议排除，见 README 说明）=====
+external/fieldtrip-20181205/
+
+# ===== 系统/编辑器杂项 =====
+.DS_Store
+Thumbs.db
+*.asv
+*.m~
+__pycache__/
