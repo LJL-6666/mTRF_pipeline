@@ -1,5 +1,14 @@
 # mTRF_pipeline
 
+<!-- cross-repo-nav -->
+> **本项目由四个仓库组成。** 主链路：
+> [`RELAX_pipeline`](https://github.com/LJL-6666/RELAX_pipeline) → [`daest-ty-preprocessing`](https://github.com/LJL-6666/daest-ty-preprocessing) → [`daest-ty-mainline`](https://github.com/LJL-6666/daest-ty-mainline)；
+> [`mTRF_pipeline`](https://github.com/LJL-6666/mTRF_pipeline) 为并行的语音包络—EEG 分析线。
+>
+> 当前仓库：**`mTRF_pipeline`** —— 并行分析线：语音包络 → 前向时间响应函数
+<!-- /cross-repo-nav -->
+
+
 MATLAB 端到端流水线：用**语音包络**拟合**前向时间响应函数（forward TRF）**，预测连续语音刺激下的 EEG 响应，并输出通道级预测相关与地形图。
 
 适用于 Neuracle BDF 采集、按试次播放顺序对齐刺激的实验范式。参数集中在 `config_default.m`；FieldTrip 与 mTRF 已随仓库提供。原始 EEG / 音频数据不入库，需自备后才能完整重跑；仓库内附带 **sub2 / sub3 案例图与模型** 供对照。
@@ -214,6 +223,7 @@ A: 可以。`doStep1/2/3=false; doStep4=true;`，且已有 `mTRF_model.mat`。
 ## 10. 许可证与引用
 
 - **本仓库流水线代码**（`src/`、`main.m`、`setup.m`、`config_default.m` 等）：[MIT](LICENSE)。  
+- **逐组件许可、本地改动与裁剪说明见 [`THIRD_PARTY.md`](THIRD_PARTY.md)。**由于 `external/` 含 GPL 组件（FieldTrip），本仓库**整体再分发受 GPL 条款约束**。  
 - **FieldTrip**：GPL（见 `external/fieldtrip-20181205/COPYING`）。整体再分发时请遵守各组件条款。  
 - **mTRF**：BSD 3-Clause（`external/mtrf/LICENSE`）。  
 - **runica**：保留 `src/utils/runica.m` 内原作者声明。

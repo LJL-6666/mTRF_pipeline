@@ -32,3 +32,11 @@ THIRD-PARTY COMPONENTS (not covered by the MIT license above)
 
 When redistributing this repository as a whole, comply with each component's
 license (notably FieldTrip's GPL terms for that subtree).
+
+
+--------------------------------------------------------------------------------
+适用范围说明（不构成对上述 MIT 条款的修改）
+
+上述 MIT 许可仅适用于本仓库的自有代码。`external/`（以及本仓库中随附的其他第三方
+代码）适用其各自的原许可证，其中包含 GPL 组件；本仓库整体的再分发受这些条款约束。
+逐组件的许可归属、本地改动与裁剪说明见 THIRD_PARTY.md。

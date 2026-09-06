@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+title: "mTRF_pipeline · 语音包络到 EEG 前向时间响应函数的可迁移流水线"
+message: "若使用本仓库的代码，请引用本仓库，并同时引用 mTRF-Toolbox 与 FieldTrip（见 THIRD_PARTY.md）。"
+type: software
+authors:
+  - family-names: "刘"
+    given-names: "嘉玲"
+    alias: LJL-6666
+repository-code: "https://github.com/LJL-6666/mTRF_pipeline"
+abstract: >-
+  MATLAB 端到端流水线：单声道语音 → Hilbert 包络 → 与 EEG 按播放序对齐 →
+  前向 mTRF 拟合与 λ 交叉验证 → 通道级预测相关与地形图。仓库自有代码为 MIT；
+  随附于 external/ 的 FieldTrip 为 GPL-3.0，逐项说明见 THIRD_PARTY.md。
+license:
+  - MIT
+  - GPL-3.0-or-later
+date-released: "2026-09-06"
