@@ -1,0 +1,9 @@
+NOTICE — 许可适用范围
+
+本仓库的 LICENSE（MIT）仅适用于自有代码：src/、main.m、setup.m、config_default.m。
+
+external/fieldtrip-20181205/ 为 GPL-3.0，external/mtrf/ 为 BSD-3-Clause，
+src/utils/runica.m 保留其原作者声明。因 external/ 含 GPL 组件，本仓库整体的
+再分发受 GPL 条款约束。
+
+逐组件的许可归属、本地改动与裁剪说明见 THIRD_PARTY.md。
