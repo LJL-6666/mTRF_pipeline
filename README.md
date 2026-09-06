@@ -171,7 +171,9 @@ mTRF_pipeline/
 ├─ main.m                 % 唯一入口
 ├─ setup.m                % 路径与依赖自检（main 自动调用）
 ├─ config_default.m       % 全部实验 / 分析参数
-├─ LICENSE                % 本仓库流水线代码：MIT；第三方见文内说明
+├─ LICENSE                % 本仓库流水线代码：MIT；适用范围见文件末尾
+├─ THIRD_PARTY.md        % 第三方组件许可、本地改动与裁剪清单
+├─ CITATION.cff
 ├─ README.md
 ├─ src/
 │   ├─ step1_extract_envelope.m
@@ -179,7 +181,7 @@ mTRF_pipeline/
 │   ├─ step3_run_trf.m
 │   ├─ step4_visualize.m
 │   └─ utils/             % U_topoplot, trialfun_BDF_zxm, runica
-├─ external/
+├─ external/             % 已裁剪，见 THIRD_PARTY.md
 │   ├─ fieldtrip-20181205/
 │   └─ mtrf/
 ├─ resources/             % label31, eeg_neighbours_29, easycapM1.mat
