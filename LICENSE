@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2026 mTRF_pipeline contributors
+Copyright (c) 2026 LJL-6666
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,24 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
----------------------------------------------------------------------------
-THIRD-PARTY COMPONENTS (not covered by the MIT license above)
-
-- external/fieldtrip-20181205/  — FieldTrip, GNU GPL
-  See external/fieldtrip-20181205/COPYING
-- external/mtrf/                — mTRF Toolbox, BSD 3-Clause
-  See external/mtrf/LICENSE
-- src/utils/runica.m            — ICA routine originating from EEGLAB
-  Retain the original author notices in that file
-
-When redistributing this repository as a whole, comply with each component's
-license (notably FieldTrip's GPL terms for that subtree).
-
-
---------------------------------------------------------------------------------
-适用范围说明（不构成对上述 MIT 条款的修改）
-
-上述 MIT 许可仅适用于本仓库的自有代码。`external/`（以及本仓库中随附的其他第三方
-代码）适用其各自的原许可证，其中包含 GPL 组件；本仓库整体的再分发受这些条款约束。
-逐组件的许可归属、本地改动与裁剪说明见 THIRD_PARTY.md。
